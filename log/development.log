@@ -73,3 +73,17 @@ Processing ContactsController#index (for 127.0.0.1 at 2009-10-27 20:37:00) [GET]
 Rendering template within layouts/contacts
 Rendering contacts/index
 Completed in 214ms (View: 7, DB: 202) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-10-27 21:54:23) [GET]
+  [4;36;1mContact Load (202.8ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 333ms (View: 124, DB: 203) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-10-27 22:01:11) [GET]
+  [4;35;1mContact Load (105.3ms)[0m   [0mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 200ms (View: 88, DB: 105) | 200 OK [http://localhost/contacts]
