@@ -1,4 +1,4 @@
-<h1>Editing contact</h1>
+<h1>New contact</h1>
 
 <% form_for(@contact) do |f| %>
   <%= f.error_messages %>
@@ -36,10 +36,8 @@
     <%= f.text_field :post_code %>
   </td></tr>
   <tr><td>
-    <%= f.submit 'Update' %>
+    <%= f.submit 'Create' %>
   </td></tr>
-  </table>
 <% end %>
 
-<%= link_to 'Show', @contact %> |
 <%= link_to 'Back', contacts_path %>

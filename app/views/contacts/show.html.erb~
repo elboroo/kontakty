@@ -38,7 +38,7 @@
   <b>Post code:</b></td><td>
   <%=h @contact.post_code %>
 </td></tr>
-</table>
+
 
 <%= link_to 'Edit', edit_contact_path(@contact) %> |
 <%= link_to 'Back', contacts_path %>

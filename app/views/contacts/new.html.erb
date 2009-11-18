@@ -2,42 +2,43 @@
 
 <% form_for(@contact) do |f| %>
   <%= f.error_messages %>
-
-  <p>
-    <%= f.label :first_name %><br />
+  <table>
+  <tr><td>
+    <%= f.label :first_name %></td><td>
     <%= f.text_field :first_name %>
-  </p>
-  <p>
-    <%= f.label :last_name %><br />
+  </td></tr>
+  <tr><td>
+    <%= f.label :last_name %></td><td>
     <%= f.text_field :last_name %>
-  </p>
-  <p>
-    <%= f.label :email %><br />
+  </td></tr>
+  <tr><td>
+    <%= f.label :email %></td><td>
     <%= f.text_field :email %>
-  </p>
-  <p>
-    <%= f.label :homepage %><br />
+  </td></tr>
+  <tr><td>
+    <%= f.label :homepage %></td><td>
     <%= f.text_field :homepage %>
-  </p>
-  <p>
-    <%= f.label :phone %><br />
+  </td></tr>
+  <tr><td>
+    <%= f.label :phone %></td><td>
     <%= f.text_field :phone %>
-  </p>
-  <p>
-    <%= f.label :city %><br />
+  </td></tr>
+  <tr><td>
+    <%= f.label :city %></td><td>
     <%= f.text_field :city %>
-  </p>
-  <p>
-    <%= f.label :street %><br />
+  </td></tr>
+  <tr><td>
+    <%= f.label :street %></td><td>
     <%= f.text_field :street %>
-  </p>
-  <p>
-    <%= f.label :post_code %><br />
+  </td></tr>
+  <tr><td>
+    <%= f.label :post_code %></td><td>
     <%= f.text_field :post_code %>
-  </p>
-  <p>
+  </td></tr>
+  <tr><td>
     <%= f.submit 'Create' %>
-  </p>
+  </td></tr>
+  </table>
 <% end %>
 
 <%= link_to 'Back', contacts_path %>

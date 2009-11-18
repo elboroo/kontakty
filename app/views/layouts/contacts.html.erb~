@@ -5,9 +5,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Contacts: <%= controller.action_name %></title>
-  <%= stylesheet_link_merged :base %>
-  <%= javascript_include_merged :base %>
-
+  <%= stylesheet_link_tag 'default' %>
 </head>
 
 <body>

@@ -1,0 +1,11 @@
+--- 
+javascripts: 
+- base: 
+  - controls
+  - dragdrop
+  - effects
+  - prototype
+  - application
+stylesheets: 
+- base: 
+  - default
