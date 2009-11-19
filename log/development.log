@@ -606,3 +606,174 @@ Rendering contacts/index
 Rendered layouts/_header (0.4ms)
 Rendered layouts/_sidebar (0.1ms)
 Completed in 55ms (View: 40, DB: 2) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-19 00:02:22) [GET]
+  [4;36;1mContact Load (1.4ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_sidebar (1.2ms)
+Completed in 170ms (View: 161, DB: 1) | 200 OK [http://localhost/contacts/]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-19 00:02:26) [GET]
+  [4;35;1mContact Load (2.0ms)[0m   [0mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_sidebar (0.1ms)
+Completed in 50ms (View: 36, DB: 2) | 200 OK [http://localhost/contacts/]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-19 00:02:28) [GET]
+  [4;36;1mContact Load (2.0ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_sidebar (0.2ms)
+Completed in 70ms (View: 55, DB: 2) | 200 OK [http://localhost/contacts/]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-11-19 00:03:04) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_sidebar (0.2ms)
+Completed in 59ms (View: 43, DB: 0) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-19 00:03:21) [GET]
+  [4;35;1mContact Load (2.1ms)[0m   [0mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_sidebar (0.1ms)
+Completed in 49ms (View: 34, DB: 2) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-11-19 00:04:24) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_sidebar (0.2ms)
+Completed in 48ms (View: 31, DB: 0) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-19 00:04:28) [GET]
+  [4;36;1mContact Load (2.0ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_sidebar (0.2ms)
+Completed in 67ms (View: 52, DB: 2) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2009-11-19 00:04:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mContact Load (0.6ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 3) [0m
+Rendering template within layouts/contacts
+Rendering contacts/show
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_sidebar (0.1ms)
+Completed in 28ms (View: 17, DB: 1) | 200 OK [http://localhost/contacts/3]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-19 00:04:35) [GET]
+  [4;36;1mContact Load (2.1ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_sidebar (0.1ms)
+Completed in 63ms (View: 48, DB: 2) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2009-11-19 00:04:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mContact Load (1.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 1) [0m
+Rendering template within layouts/contacts
+Rendering contacts/show
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_sidebar (0.2ms)
+Completed in 36ms (View: 18, DB: 1) | 200 OK [http://localhost/contacts/1]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-19 00:04:43) [GET]
+  [4;36;1mContact Load (2.0ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_sidebar (0.2ms)
+Completed in 66ms (View: 51, DB: 2) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2009-11-19 00:04:46) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mContact Load (1.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 3) [0m
+Rendering template within layouts/contacts
+Rendering contacts/edit
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_sidebar (0.1ms)
+Completed in 148ms (View: 131, DB: 1) | 200 OK [http://localhost/contacts/3/edit]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-19 00:04:50) [GET]
+  [4;36;1mContact Load (2.1ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_sidebar (0.1ms)
+Completed in 66ms (View: 50, DB: 2) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2009-11-19 00:04:52) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mContact Load (1.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 3) [0m
+Rendering template within layouts/contacts
+Rendering contacts/edit
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_sidebar (0.2ms)
+Completed in 52ms (View: 35, DB: 1) | 200 OK [http://localhost/contacts/3/edit]
+
+
+Processing ContactsController#update (for 127.0.0.1 at 2009-11-19 00:04:54) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"eAl+/J5f10eOwga93ITXkP17ZTvHwohcydCd6n0nlPE=", "contact"=>{"city"=>"Warszawa", "post_code"=>"00-356", "street"=>"Toruńska", "phone"=>"554222754", "homepage"=>"", "last_name"=>"Kowalski", "email"=>"jankow@xyz.com", "first_name"=>"Jan"}, "id"=>"3"}
+  [4;36;1mContact Load (1.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 3) [0m
+Redirected to http://localhost:3000/contacts/3
+Completed in 29ms (DB: 1) | 302 Found [http://localhost/contacts/3]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2009-11-19 00:04:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mContact Load (0.6ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 3) [0m
+Rendering template within layouts/contacts
+Rendering contacts/show
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_sidebar (0.1ms)
+Completed in 21ms (View: 10, DB: 1) | 200 OK [http://localhost/contacts/3]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-19 00:04:56) [GET]
+  [4;36;1mContact Load (2.0ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_sidebar (0.2ms)
+Completed in 66ms (View: 52, DB: 2) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-19 11:29:26) [GET]
+  [4;36;1mContact Load (2.6ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (14.9ms)
+Rendered layouts/_sidebar (5.8ms)
+Completed in 433ms (View: 417, DB: 3) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-11-19 11:29:32) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_sidebar (0.1ms)
+Completed in 48ms (View: 35, DB: 0) | 200 OK [http://localhost/contacts/new]
