@@ -777,3 +777,216 @@ Rendering contacts/new
 Rendered layouts/_header (0.4ms)
 Rendered layouts/_sidebar (0.1ms)
 Completed in 48ms (View: 35, DB: 0) | 200 OK [http://localhost/contacts/new]
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-23 19:38:39) [GET]
+  [4;36;1mContact Load (1.8ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_sidebar (1.3ms)
+Completed in 143ms (View: 133, DB: 2) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-11-23 19:38:44) [GET]
+
+NameError (uninitialized constant ContactsController::Geokit):
+  app/controllers/contacts_controller.rb:28:in `new'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.6ms)
+Rendered rescues/_request_and_response (5.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2009-11-23 19:39:07) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mContact Load (1.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 3) [0m
+Rendering template within layouts/contacts
+Rendering contacts/edit
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_sidebar (0.2ms)
+Completed in 64ms (View: 47, DB: 1) | 200 OK [http://localhost/contacts/3/edit]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-23 19:39:13) [GET]
+  [4;36;1mContact Load (2.0ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_sidebar (0.1ms)
+Completed in 51ms (View: 37, DB: 2) | 200 OK [http://localhost/contacts]
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-23 19:47:05) [GET]
+  [4;36;1mContact Load (1.5ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_sidebar (1.3ms)
+Completed in 172ms (View: 163, DB: 1) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-11-23 19:47:08) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.merge) on line #28 of app/views/contacts/new.html.erb:
+25:   </td></tr>
+26:   <tr><td>
+27:     <%= f.label :city %></td><td>
+28:     <%= f.text_field :city, @location.city %>
+29:   </td></tr>
+30:   <tr><td>
+31:     <%= f.label :street %></td><td>
+
+    app/views/contacts/new.html.erb:28
+    app/views/contacts/new.html.erb:3
+    app/controllers/contacts_controller.rb:32:in `new'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (158.0ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-23 19:49:05) [GET]
+  [4;36;1mContact Load (1.4ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_sidebar (1.3ms)
+Completed in 176ms (View: 166, DB: 1) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-11-23 19:49:07) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_sidebar (0.2ms)
+Completed in 989ms (View: 43, DB: 0) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-23 19:56:55) [GET]
+  [4;36;1mContact Load (1.4ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_sidebar (1.3ms)
+Completed in 172ms (View: 162, DB: 1) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-11-23 19:56:58) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_sidebar (0.3ms)
+Completed in 955ms (View: 45, DB: 0) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-23 19:58:02) [GET]
+  [4;36;1mContact Load (1.4ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_sidebar (1.3ms)
+Completed in 176ms (View: 166, DB: 1) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-11-23 19:58:05) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+
+ActionView::TemplateError (undefined method `City' for #<Geokit::GeoLoc:0x7fab0f873680>) on line #44 of app/views/contacts/new.html.erb:
+41:   </table>
+42: <% end %>
+43: 
+44: You are probably from: <%= @location.City %><br />
+45: 
+46: 
+47: <%= link_to 'Back', contacts_path %>
+
+    app/views/contacts/new.html.erb:44
+    app/controllers/contacts_controller.rb:32:in `new'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (145.2ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-23 19:58:39) [GET]
+  [4;36;1mContact Load (1.6ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (1.4ms)
+Rendered layouts/_sidebar (1.5ms)
+Completed in 177ms (View: 167, DB: 2) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-11-23 19:58:41) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_sidebar (0.3ms)
+Completed in 3651ms (View: 44, DB: 0) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-11-23 19:58:45) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_sidebar (0.3ms)
+Completed in 956ms (View: 35, DB: 0) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-11-23 19:58:46) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_sidebar (0.2ms)
+Completed in 931ms (View: 34, DB: 0) | 200 OK [http://localhost/contacts/new]
