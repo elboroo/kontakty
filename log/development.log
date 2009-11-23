@@ -990,3 +990,62 @@ Rendering contacts/new
 Rendered layouts/_header (0.7ms)
 Rendered layouts/_sidebar (0.2ms)
 Completed in 931ms (View: 34, DB: 0) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-23 20:15:20) [GET]
+  [4;36;1mContact Load (1.5ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_sidebar (1.3ms)
+Completed in 170ms (View: 160, DB: 1) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-11-23 20:15:23) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_sidebar (2.5ms)
+Completed in 10538ms (View: 83, DB: 0) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-11-23 20:15:34) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_sidebar (0.2ms)
+Completed in 3541ms (View: 32, DB: 0) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-11-23 20:15:37) [GET]
+Caught an error during HostIp geocoding call: end of file reached
+Rendering template within layouts/contacts
+Rendering contacts/new
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_sidebar (0.2ms)
+Completed in 836ms (View: 31, DB: 0) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-11-23 20:15:43) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_sidebar (0.2ms)
+Completed in 3625ms (View: 168, DB: 0) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-23 20:16:05) [GET]
+  [4;36;1mContact Load (1.5ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_sidebar (1.3ms)
+Completed in 171ms (View: 162, DB: 1) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-11-23 20:16:07) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_sidebar (0.3ms)
+Completed in 3526ms (View: 46, DB: 0) | 200 OK [http://localhost/contacts/new]

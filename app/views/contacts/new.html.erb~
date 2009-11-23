@@ -41,7 +41,7 @@
   </table>
 <% end %>
 
-You are probably from: <%= @location.City %><br />
+You are probably from: <%= @location %><br />
 
 
 <%= link_to 'Back', contacts_path %>
