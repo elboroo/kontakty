@@ -1049,3 +1049,39 @@ Rendering contacts/new
 Rendered layouts/_header (0.9ms)
 Rendered layouts/_sidebar (0.3ms)
 Completed in 3526ms (View: 46, DB: 0) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-26 10:23:16) [GET]
+  [4;36;1mContact Load (2.5ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (8.8ms)
+Rendered layouts/_sidebar (12.3ms)
+Completed in 313ms (View: 296, DB: 2) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2009-11-26 10:23:22) [GET]
+Rendering template within layouts/contacts
+Rendering contacts/new
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_sidebar (0.2ms)
+Completed in 999ms (View: 50, DB: 0) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-11-26 10:25:16) [GET]
+  [4;35;1mContact Load (2.1ms)[0m   [0mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_sidebar (0.1ms)
+Completed in 54ms (View: 39, DB: 2) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2009-11-26 10:25:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mContact Load (1.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 1) [0m
+Rendering template within layouts/contacts
+Rendering contacts/edit
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_sidebar (0.1ms)
+Completed in 53ms (View: 35, DB: 1) | 200 OK [http://localhost/contacts/1/edit]
