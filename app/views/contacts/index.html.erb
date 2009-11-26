@@ -11,6 +11,7 @@
     <th>City</th>
     <th>Street</th>
     <th>Post code</th>
+    <th>Tag names</th>
   </tr>
 
 <% @contacts.each do |contact| %>
@@ -24,6 +25,7 @@
     <td><%=h contact.city %></td>
     <td><%=h contact.street %></td>
     <td><%=h contact.post_code %></td>
+    <td><%=h contact.tag_names %></td>
     <td><%= link_to 'Show', contact %></td>
     <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
     <td><%= link_to 'Destroy', contact, :confirm => 'Are you sure?', :method => :delete %></td>
